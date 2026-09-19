@@ -9,10 +9,6 @@ max-width: 100%;
 overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 *{
   margin: 0;
@@ -98,6 +94,7 @@ main{
 
 .card-section img {
   min-width: 250px;
+  max-width: 100%
   min-height: 250px;
   object-fit: cover;
   width: 750px;
@@ -362,4 +359,9 @@ footer a {
 .is-disabled {
   cursor: not-allowed;
   pointer-events: none; /* يمنع أي كليكات نهائياً */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
