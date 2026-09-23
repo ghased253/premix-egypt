@@ -379,18 +379,4 @@ footer a {
   pointer-events: none; /* يمنع أي كليكات نهائياً */
 }
 
-img {
-  max-width: 95%;
-  height: auto;
-}
 
-body{
-  margin: 0;
-  padding: 0;
-font-family: cairo;
-}
-
-html, body {
-max-width: 100%;
-overflow-x: hidden;
-}
