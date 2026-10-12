@@ -21,6 +21,14 @@
 <meta property="og:description" content="شركة بريميكس لمواد البناء والدهانات الحديثة - 6 أكتوبر، الجيزة، مصر. Modern Paints & Construction Materials.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://premixegypt.onrender.com">
+     <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.enterprise.render('html_element', {
+          'sitekey' : '6LeIm-stAAAAAFmhyKGVUggqUEQ4-MXlzJsZ9Riy',
+          'action': 'LOGIN',
+        });
+      };
+    </script>
 </head>
 <body>
   <header class="head-section">
@@ -30,26 +38,48 @@
       </nav>
     </div>
     <div class="right-section">
-      <nav class="header-nav">
+      <nav class="headers-link">
         <a href="../index.html">الرئيسية</a>
         <a href="../About-us/about.html">عن بريميكس</a>
         <a href="contact-us.html" class="active">تواصل معنا</a>
       </nav>
+
+
+      <nav class="hamburger-link">
+        <button class="hamburger-btn js-hamburger-btn">
+        <img class="hamburger-icon" src="../hamburger-menu.png">
+        </button>
+        </nav>
+      <nav class="sidebar js-sidebar">
+        <div class="close-section">
+        <button class="close-btn js-close-btn">&times;</button>
+        </div>
+        <div class="links-section">
+        <a href="../index.html">الرئيسية</a>
+        <a href="../About-us/about.html">عن بريميكس</a>
+        <a href="contact-us.html" class="active">تواصل معنا</a>
+        </div>
+      </nav>
+
     </div>
   </header>
   <main>
       <section class="contact-us-section">
-      <p class="top-title contact-us-title">قيد الصيانة</p>
 
-<form action="https://api.web3forms.com/submit" method="POST" class="form-section js-form-section" target="hidden-iframe">
+
+
+
+<form action="https://api.web3forms.com/submit" method="POST" class="form-section js-form-section" id="1">
   <input type="hidden" name="access_key" value="810eeaf0-dbc9-4e8a-9263-ef595ba20b5c">
-  <input type="text"  placeholder="تواصل واتس قيد الصيانة حاليا" name="name" class="name-input" required>
-  <input type="email" name="email" placeholder="قيد الصيانة" class="email-input" required>
-  <textarea name="message" placeholder="قيد الصيانة" class="subject-input" required></textarea>
-  <button type="submit" class="submit-button js-submit-button">قيد الصيانة</button>
+  <p class="top-title contact-us-title">تواصل معنا</p>
+  <input type="text" name="name" placeholder="الاسم" class="name-input"  required>
+  <input type="email" name="email" placeholder="الايميل" class="email-input" required>
+  <textarea name="message" placeholder="الوصف" class="subject-input" required></textarea>
+  <div class="g-recaptcha" data-sitekey="6LeIm-stAAAAAFmhyKGVUggqUEQ4-MXlzJsZ9Riy"></div>
+  <button type="submit" class="submit-button js-submit-button">ارسال</button>
   <p class="status is-hidden">عذرا حاليا قيد الصيانة</p>
+  
 </form>
-
     
     <iframe name="hidden-iframe" style="display: none;"></iframe>
 
@@ -77,6 +107,10 @@
   </section>
   <p class="copyright-p">جميع الحقوق محفوظة @ 2026</p>
 </footer>
-<script type="module" src="contact-us.js"></script>
+<script src="contact-us.js"></script>
+<script src="../toggle-menu.js"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?onload=onloadCallback&render=explicit"
+    async defer>
+  </script>
 </body>
 </html>

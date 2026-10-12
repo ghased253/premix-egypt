@@ -34,6 +34,22 @@ header, section, footer{
   margin-right: auto;
 }
 
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+
+.headers-link {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
 .head-section{
   width: 100%;
   min-width: 800px;
@@ -44,6 +60,7 @@ header, section, footer{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 
 .header-nav{
   display: flex;
@@ -112,7 +129,7 @@ main{
 
 .card-section img {
   min-width: 250px;
-  max-width: 100%
+  max-width: 100%;
   min-height: 250px;
   object-fit: cover;
   width: 750px;
@@ -255,7 +272,7 @@ footer a {
   display: flex;
   align-items: start;
   justify-content: center;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 .about-caption{
@@ -379,4 +396,246 @@ footer a {
   pointer-events: none; /* يمنع أي كليكات نهائياً */
 }
 
+.hamburger-link{
+  display: none;
+}
 
+.hamburger-icon{
+  display: none;
+}
+
+.sidebar{
+  display: none;
+}
+
+@media (max-width: 768px) {
+    
+    /* 1. إخفاء لينكات الكمبيوتر تماماً على الموبايل */
+    .headers-link {
+        display: none !important;
+    }
+
+    /* 2. إظهار زرار الهامبرغر */
+    .hamburger-link {
+        display: block !important;
+    }
+
+    .hamburger-icon {
+        display: block !important;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        width: 260px;
+        height: 400px;
+        background-color: #ffffff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 80px 20px;
+        gap: 20px;
+        z-index: 1000;
+        
+        /* السحر هنا: استخفاء السايدبار بره الشاشة حتى يتم فتحه */
+       transform: translateX(100%);
+        transition: transform 0.3s;
+    }
+
+    .links-section{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .close-section{
+      display: flex;
+justify-content: center; 
+  margin-bottom: 50px; 
+    }
+
+    .close-btn{
+      background: none;
+      font-size: 70px;
+      color: #647580;
+      border: none;
+    }
+
+    /* الكلاس اللي الـ JavaScript هيفعله عشان يدخل السايدبار جوه الشاشة */
+    .open {
+        transform: translateX(0);
+    }
+
+  
+
+    .head-section {
+        min-width: 100% !important;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .header-nav {
+        gap: 20px !important; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name-input, .email-input, .subject-input {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 15px !important;
+        font-size: 18px !important;
+        height: 60px !important;
+    }
+
+    .premix-anchor{
+        font-size: 22px !important;
+    }
+
+    .subject-input {
+        padding-bottom: 150px !important;
+    }
+
+    .card-section img, .about-us-background {
+        width: 100% !important;
+        height: auto !important;
+        min-width: auto !important;
+        min-height: auto !important;
+    }
+
+    .about-us-background{
+        display: none;
+        margin: 0;
+    }
+
+    figure {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    figcaption, .about-caption, .our-vision-caption, .our-message-caption {
+        width: 100% !important;
+        font-size: 18px !important;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .about-title, .our-vision-title, .our-message-title, .contact-us-title {
+        width: 100% !important;
+        font-size: 28px !important;
+        text-align: center;
+        margin-top: 50px !important;
+    }
+
+    .section-container {
+        gap: 40px;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .top-text {
+        font-size: 20px !important;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .middle-text {
+        font-size: 15px !important;
+        text-align: center;
+        margin-bottom: 70px !important;
+    }
+
+    .bottom-text {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .whatsapp-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 450px;
+        margin-bottom: 100px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .whatsapp-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-left: 10px;
+    }
+
+    .footer-link, .footer-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-p , .number-p{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: #647580;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .number{
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .copyright-p{
+        font-size: 12px;
+    }
+
+    .is-visible{
+        display: block;
+        color: #647580;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hamburger-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-btn:hover {
+      opacity: 0.7;
+    }
+}
