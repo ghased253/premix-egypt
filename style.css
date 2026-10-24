@@ -1,7 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-font-family: cairo;
 }
 
 html, body {
@@ -195,7 +194,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  gap: 300px;
+  gap: 100px;
   margin-bottom: 100px;
 }
 
@@ -326,7 +325,6 @@ footer a {
 
 .name-input, .email-input{
   font-size: 30px;
-  font-family: cairo;
   font-weight: bold;
   color: #647580;
   border-color: #647580;
@@ -347,7 +345,6 @@ footer a {
 
 .subject-input{
   font-size: 30px;
-  font-family: cairo;
   font-weight: bold;
   color: #647580;
   border-color: #647580;
@@ -361,7 +358,6 @@ footer a {
 
 .submit-button{
   font-size: 30px;
-  font-family: cairo;
   font-weight: bold;
   border: none;
   border-radius: 10px;
@@ -408,6 +404,60 @@ footer a {
   display: none;
 }
 
+.lang-dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
+  display: flex;
+  flex-direction: row;     
+  align-items: center;      
+  background-color: #ffffff;
+  border: #647580 1px solid;
+  width: 150px;
+  color: #647580;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  gap: 8px;              
+}
+
+
+
+
+.lang-option{
+  cursor: pointer;
+}
+
+.net-img{
+  width: 40px;
+  height: 40px;
+}
+
+.border{
+  border-width: 2px;
+}
+
+.lang-menu{
+  display: none;
+
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  top: 100%;
+  right: 0;
+  padding-right: 10px;
+  border: #647580 1px solid;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     
     /* 1. إخفاء لينكات الكمبيوتر تماماً على الموبايل */
@@ -436,7 +486,8 @@ footer a {
         top: 0;
         right: 0px;
         width: 260px;
-        height: 400px;
+        height: 650px;
+        border-radius: 4px;
         background-color: #ffffff;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -638,4 +689,66 @@ justify-content: center;
     .hamburger-btn:hover {
       opacity: 0.7;
     }
+
+  .lang-dropdown-mobile {
+  position: relative !important;
+  display: inline-block !important;
 }
+
+
+
+/* 2. زرار اللغة (شيلنا منه الـ position: inherit اللئيمة) */
+.lang-btn-mobile {
+  display: flex !important;
+  flex-direction: row !important;     
+  align-items: center !important;      
+  background-color: #ffffff !important;
+  border: #647580 1px solid ;
+  width: 100% !important;
+  color: #647580 !important;
+  padding: 8px 8px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 17px !important;
+  gap: 10px;
+  z-index: 100 !important;
+  position: static !important; /* حل مشكلة تحرك الزرار */
+}
+
+.current-lang-text-mobile{
+  margin-right: 60px;
+}
+
+
+/* 3. القائمة وهي مقفولة */
+.lang-menu-mobile {
+  display: none !important;
+}
+
+.lang-option{
+  margin-top: 4px;
+}
+
+/* 4. القائمة وهي مفتوحة (ثابتة تماماً تحت الزرار من غير ما تزق الصفحة) */
+.show-mobile {
+  display: flex !important;
+  flex-direction: column !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 75px !important;
+  top: 100% !important;
+  right: 0 !important;
+  left: auto !important;
+  background-color: #ffffff !important;
+  padding-right: 10px !important;
+  border: #647580 1px solid !important;
+  border-radius: 4px !important;
+  z-index: 9999 !important;
+}
+
+.border{
+  border-width: 1.7px;
+}
+}
+
+

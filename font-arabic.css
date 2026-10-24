@@ -1,0 +1,8 @@
+body{
+  font-family: cairo;
+}
+
+
+input,  .subject-input, .submit-button{
+  font-family: cairo;
+}

@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VZH29FLMQR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VZH29FLMQR');
-</script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-arabic.css">
   <link rel="icon" href="image.ico">
   <link rel="apple-touch-icon" href="image.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +24,7 @@
 <meta property="og:description" content="شركة بريميكس لمواد البناء والدهانات الحديثة - 6 أكتوبر، الجيزة، مصر. Modern Paints & Construction Materials.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://premixegypt.onrender.com">
-  <title>premix egypt</title>
+  <title>الرئيسية</title>
 </head>
 <body>
   <header class="head-section">
@@ -47,6 +39,21 @@
         <a href="index.html" class="active">الرئيسية</a>
         <a href="About-us/about.html">عن بريميكس</a>
         <a href="Contact us/contact-us.html">تواصل معنا</a>
+        <div class="lang-dropdown">
+          <button class="lang-btn">
+            <img class="net-img" src="net.jpg">
+            <span class="current-lang-text">العربية</span>
+            <span class="arrow-symbol">
+              <svg class="arrow-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </span>
+          </button>
+          <div class="lang-menu">
+            <a class="lang-option active">العربية</a>
+            <a class="lang-option" href="English/index.html">English</a>
+          </div>
+        </div>
       </nav>
       <nav class="hamburger-link">
         <button class="hamburger-btn js-hamburger-btn">
@@ -61,7 +68,22 @@
         <a href="index.html" class="active">الرئيسية</a>
         <a href="About-us/about.html">عن بريميكس</a>
         <a href="Contact us/contact-us.html">تواصل معنا</a>
+                  <div class="lang-dropdown-mobile">
+          <button class="lang-btn-mobile">
+            <img class="net-img" src="../net.jpg">
+            <span class="current-lang-text-mobile">العربية</span>
+            <span class="arrow-symbol">
+              <svg class="arrow-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </span>
+          </button>
+          <div class="lang-menu-mobile">
+            <a class="lang-option active">العربية</a>
+            <a class="lang-option" href="English/index.html">English</a>
+          </div>
         </div>
+      </div>
       </nav>
 
     </div>
@@ -125,6 +147,7 @@
   <p class="copyright-p">جميع الحقوق محفوظة @ 2026</p>
 </footer>
 <script src="toggle-menu.js"></script>
+<script src="change-language.js"></script>
 </body>
 </html>
 
