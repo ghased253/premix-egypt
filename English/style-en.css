@@ -1,0 +1,761 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+}
+
+body {
+padding-left: 15px;
+padding-right: 15px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header, section, footer{
+  width: 100%;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+
+.headers-link {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+.head-section{
+  width: 100%;
+  min-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+a{
+color:   #647580; 
+text-decoration: none;
+font-size: 17px;
+font-weight: bold;
+}
+
+a:hover{
+ opacity: 0.7;
+}
+
+.active{
+   color: #8BBFE6;
+}
+
+.premix-anchor{
+  color: #90D5FF;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.top-title{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #647580;
+  gap: 20px;
+}
+
+.top-text{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.middle-text{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.bottom-text{
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.card-section{
+  display: grid;
+  row-gap: 100px;
+
+}
+
+.card-section img {
+  min-width: 250px;
+  max-width: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  width: 750px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  
+}
+
+
+figcaption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #647580;
+  width: 450px;
+  height: auto;
+  font-size:  64px;
+  font-weight: bold;
+  line-height: 1.4;
+
+}
+  
+.whatsapp-link{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+margin-top: 450px;
+margin-bottom: 100px;
+background-color: white;
+cursor: pointer;
+}
+
+
+.whatsapp-icon{
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.section-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.footer-link, .footer-number{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-p , .number-p{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  
+  color: #647580;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.number{
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.copyright-p{
+  color: #647580;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin-right: 100px;     
+  margin-left: 0;          
+  margin-bottom: 40px
+}
+
+.about-us-background{
+  width: 750px;
+  height: 1300px;
+  object-fit: cover;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  color: #647580;
+  border-radius: 12px;
+}
+
+
+
+.about-title, .our-vision-title, .our-message-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: #90D5FF;
+  font-size: 65px;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.our-vision-title, .our-message-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+
+.about-us-figure, .our-vision-figure, .our-message-figure{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.about-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #647580;
+ width: 519px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.our-vision-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #647580;
+  width: 1500px;
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.our-message-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #647580;
+  width: 1350px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.contact-us-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-title{
+  margin-top: 250px;
+  color: #90D5FF;
+  font-weight: 700;
+  font-size: 100px;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.name-input, .email-input{
+  font-size: 30px;
+  font-weight: bold;
+  color: #647580;
+  border-color: #647580;
+  border-width: 2px;
+  border-style: solid;
+  width: 1305px;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.subject-input{
+  font-size: 30px;
+  font-weight: bold;
+  color: #647580;
+  border-color: #647580;
+  border-width: 2px;
+  border-style: solid;
+  width: 1305px;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 500px;
+}
+
+.submit-button{
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #647580;
+  width: 300px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  opacity: 0.8;
+}
+
+.submit-button:active{
+  opacity: 0.5;
+}
+
+.is-hidden{
+  display: none;
+}
+
+.is-visible{
+  display: block;
+  color: #647580;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none; /* يمنع أي كليكات نهائياً */
+}
+
+.hamburger-link{
+  display: none;
+}
+
+.hamburger-icon{
+  display: none;
+}
+
+.sidebar{
+  display: none;
+}
+
+.lang-dropdown {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+
+
+/* 2. زرار اللغة (شيلنا منه الـ position: inherit اللئيمة) */
+.lang-btn {
+  display: flex !important;
+  flex-direction: row !important;     
+  align-items: center !important;      
+  background-color: #ffffff !important;
+  border: #647580 1px solid ;
+  width: 150px !important;
+  color: #647580 !important;
+  padding: 8px 8px !important;
+  margin: auto;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 17px !important;
+  gap: 7px !important;              
+  z-index: 100 !important;
+  position: static !important; /* حل مشكلة تحرك الزرار */
+}
+
+/* 3. القائمة وهي مقفولة */
+.lang-menu {
+  display: none !important;
+}
+
+.lang-option{
+  margin-top: 4px;
+}
+
+/* 4. القائمة وهي مفتوحة (ثابتة تماماً تحت الزرار من غير ما تزق الصفحة) */
+.show {
+  display: flex !important;
+  flex-direction: column !important;
+  position: absolute !important;
+  width: 150px !important;
+  height: 60px !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: auto !important;
+  background-color: #ffffff !important;
+  padding-left: 10px !important;
+  border: #647580 1px solid !important;
+  border-radius: 4px !important;
+  z-index: 9999 !important;
+}
+.net-img{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    /* 1. إخفاء لينكات الكمبيوتر تماماً على الموبايل */
+    .headers-link {
+        display: none !important;
+    }
+
+    /* 2. إظهار زرار الهامبرغر */
+    .hamburger-link {
+        display: block !important;
+    }
+
+    .hamburger-icon {
+        display: block !important;
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0px;
+        width: 260px;
+        height: 600px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 80px 20px;
+        gap: 20px;
+        z-index: 1000;
+        
+        /* السحر هنا: استخفاء السايدبار بره الشاشة حتى يتم فتحه */
+       transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+
+    .links-section{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .close-section{
+      display: flex;
+justify-content: center; 
+  margin-bottom: 50px; 
+    }
+
+    .close-btn{
+      background: none;
+      font-size: 70px;
+      color: #647580;
+      border: none;
+    }
+
+    /* الكلاس اللي الـ JavaScript هيفعله عشان يدخل السايدبار جوه الشاشة */
+    .open {
+        transform: translateX(0);
+    }
+
+  
+
+    .head-section {
+        min-width: 100% !important;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .header-nav {
+        gap: 20px !important; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name-input, .email-input, .subject-input {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 15px !important;
+        font-size: 18px !important;
+        height: 60px !important;
+    }
+
+    .premix-anchor{
+        font-size: 22px !important;
+    }
+
+    .subject-input {
+        padding-bottom: 150px !important;
+    }
+
+    .card-section img, .about-us-background {
+        width: 100% !important;
+        height: auto !important;
+        min-width: auto !important;
+        min-height: auto !important;
+    }
+
+    .about-us-background{
+        display: none;
+        margin: 0;
+    }
+
+    figure {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    figcaption, .about-caption, .our-vision-caption, .our-message-caption {
+        width: 100% !important;
+        font-size: 18px !important;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .about-title, .our-vision-title, .our-message-title, .contact-us-title {
+        width: 100% !important;
+        font-size: 28px !important;
+        text-align: center;
+        margin-top: 50px !important;
+    }
+
+    .section-container {
+        gap: 40px;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .top-text {
+        font-size: 20px !important;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .middle-text {
+        font-size: 15px !important;
+        text-align: center;
+        margin-bottom: 70px !important;
+    }
+
+    .bottom-text {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .whatsapp-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 450px;
+        margin-bottom: 100px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .whatsapp-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-left: 10px;
+    }
+
+    .footer-link, .footer-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-p , .number-p{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: #647580;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .number{
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .copyright-p{
+        font-size: 12px;
+    }
+
+    .is-visible{
+        display: block;
+        color: #647580;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hamburger-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-btn:hover {
+      opacity: 0.7;
+    }
+
+    .lang-dropdown-mobile {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+
+
+/* 2. زرار اللغة (شيلنا منه الـ position: inherit اللئيمة) */
+.lang-btn-mobile {
+  display: flex !important;
+  flex-direction: row !important;     
+  align-items: center !important;      
+  background-color: #ffffff !important;
+  border: #647580 1px solid ;
+  width: 100% !important;
+  color: #647580 !important;
+  padding: 8px 8px !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 17px !important;
+  gap: 10px;
+  z-index: 100 !important;
+  position: static !important; /* حل مشكلة تحرك الزرار */
+}
+
+.current-lang-text-mobile{
+  margin-right: 60px;
+}
+
+
+/* 3. القائمة وهي مقفولة */
+.lang-menu-mobile {
+  display: none !important;
+}
+
+.lang-option{
+  margin-top: 4px;
+}
+
+/* 4. القائمة وهي مفتوحة (ثابتة تماماً تحت الزرار من غير ما تزق الصفحة) */
+.show-mobile {
+  display: flex !important;
+  flex-direction: column !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 60px !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: auto !important;
+  background-color: #ffffff !important;
+  padding-left: 10px !important;
+  border: #647580 1px solid !important;
+  border-radius: 4px !important;
+  z-index: 9999 !important;
+}
+}
+
+.border{
+  border-width: 1.7px;
+}

@@ -1,0 +1,15 @@
+body{
+  font-family: Inter;
+}
+
+.about-title{
+  font-size: 55px;
+}
+
+.lang-dropdown{
+  font-family: Inter;
+}
+
+input,  .subject-input, .submit-button{
+  font-family: Inter;
+}
